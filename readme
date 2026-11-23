@@ -1,0 +1,81 @@
+# Melanin-Compensated Non-Invasive Glucometer
+
+## Overview
+
+A non-invasive glucose estimation prototype that uses infrared optical sensing and melanin compensation to reduce the influence of skin pigmentation on glucose estimation.
+
+## Problem Statement
+
+Conventional glucose monitoring generally requires blood sampling. Optical non-invasive approaches can be affected by variations in skin pigmentation. This project explores a pigmentation-aware approach to optical glucose estimation.
+
+## Objectives
+
+- Develop a non-invasive optical sensing prototype.
+- Acquire optical signals using a 940 nm infrared source.
+- Process signals using an ESP32 microcontroller.
+- Estimate skin pigmentation using a melanin index.
+- Apply melanin compensation to optical measurements.
+- Display real-time measurements and signal information.
+
+## Hardware Components
+
+- ESP32 microcontroller
+- 940 nm infrared LED
+- BPW34 photodiode
+- MCP6002 operational amplifier
+- Supporting electronic components and optical sensing enclosure
+
+## Key Features
+
+- Non-invasive fingertip optical sensing
+- Melanin index estimation
+- Melanin-compensated glucose estimation
+- Comparison of raw and compensated readings
+- Real-time monitoring dashboard
+- Signal quality and perfusion information
+- Heart-rate display
+- Optical signal graphs
+
+## Working Principle
+
+1. The infrared LED illuminates the fingertip.
+2. The photodetector captures the resulting optical signal.
+3. The analog signal is conditioned and acquired by the microcontroller.
+4. The system analyses optical measurements and estimates pigmentation using a melanin index.
+5. A compensation algorithm adjusts the measurements to account for pigmentation-related variations.
+6. The system displays the estimated glucose value and supporting parameters on the monitoring dashboard.
+
+## Technology Stack
+
+- Embedded hardware: ESP32
+- Optical sensing: 940 nm infrared LED and BPW34 photodiode
+- Signal conditioning: MCP6002 op-amp
+- Firmware development: Arduino IDE / Embedded C-C++
+- Signal processing: Optical signal analysis and melanin compensation
+- Visualization: Real-time monitoring dashboard
+
+## Prototype Demonstration
+
+A working prototype demonstration video is included in this repository.
+
+## Applications
+
+- Research into non-invasive glucose monitoring
+- Pigmentation-aware optical sensing
+- Optical biosensing and signal processing
+
+## Future Scope
+
+- Calibration and validation against reference glucose measurements
+- Testing across diverse skin pigmentation levels
+- Improving signal accuracy and repeatability
+- Miniaturization and development of a portable device
+- Further algorithm optimization
+
+## Disclaimer
+
+This is an experimental research prototype and is not a clinically validated medical device. Its displayed glucose values are estimates and should not be used for medical diagnosis or treatment decisions.
+
+## Project Status
+
+Working prototype – Research and development stage.
